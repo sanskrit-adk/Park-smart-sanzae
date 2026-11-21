@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { REFUND_POLICY_TEXT } from "@/lib/pricing";
 
@@ -14,6 +15,17 @@ export default function AboutPage() {
             ParkSmart helps Bay Area drivers find a space that will actually be free when they arrive, and helps hosts and operators fill theirs.
           </p>
         </header>
+
+        <section id="ai" className="scroll-mt-24 space-y-3">
+          <h2 className="text-2xl font-semibold">Where ParkSmart uses AI</h2>
+          <p className="text-muted-foreground">
+            Not everything needs AI. See our{" "}
+            <Link href="/ai-opportunities" className="font-medium text-foreground underline underline-offset-4">
+              AI opportunity map
+            </Link>{" "}
+            for which activities use Traditional ML, GenAI, both or no AI at all, and how we predict parking availability.
+          </p>
+        </section>
 
         <section id="data" className="scroll-mt-24 space-y-3">
           <h2 className="text-2xl font-semibold">Where the data comes from</h2>

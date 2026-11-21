@@ -33,6 +33,7 @@ export function SiteFooter() {
           title="ParkSmart"
           links={[
             ["/about", "About & data sources"],
+            ["/ai-opportunities", "AI opportunity map"],
             ["/about#privacy", "Privacy"],
             ["/about#terms", "Terms & refunds"],
           ]}
